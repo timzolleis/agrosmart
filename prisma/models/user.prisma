@@ -1,0 +1,38 @@
+model User {
+  id            String   @id @default(cuid())
+  name          String
+  email         String   @unique
+  emailVerified Boolean  @default(false)
+  image         String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  //Some developer-account specific things
+  hasVerificationRequested Boolean @default(false)
+  isVerified               Boolean @default(false)
+  isAdmin                  Boolean @default(false)
+
+  //Relationships
+  sessions Session[]
+  account  Account?
+}
+
+model Account {
+  id     String @id @default(cuid())
+  userId String @unique
+  user   User   @relation(fields: [userId], references: [id])
+
+  accountId String
+
+  providerId            String
+  accessToken           String?
+  refreshToken          String?
+  accessTokenExpiresAt  DateTime?
+  refreshTokenExpiresAt DateTime?
+  scope                 String?
+  idToken               String?
+  password              String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
