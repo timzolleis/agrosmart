@@ -1,0 +1,33 @@
+{
+  "title": "Register to AgroSmart",
+  "description": "Create an account to access all features of AgroSmart.",
+  "form": {
+    "labels": {
+      "name": "Full Name",
+      "email": "E-Mail",
+      "password": "Password"
+    },
+    "placeholders": {
+      "name": "Enter your full name",
+      "email": "Enter your email address",
+      "password": "Enter your password"
+    },
+    "submit": "Register",
+    "errors": {
+      "name": {
+        "required": "Full name is required"
+      },
+      "email": {
+        "required": "Email is required"
+      },
+      "password": {
+        "required": "Password is required",
+        "minLength": "Password must be at least 6 characters"
+      }
+    }
+  },
+  "links": {
+    "haveAccount": "Already have an account?",
+    "signIn": "Sign in"
+  }
+}

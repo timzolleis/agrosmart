@@ -1,0 +1,23 @@
+{
+  "create": {
+    "title": "Create farm",
+    "description": "Create your first farm to get started. A farm only needs a name.",
+    "form": {
+      "labels": {
+        "name": "Farm Name"
+      },
+      "placeholders": {
+        "name": "Enter farm name"
+      },
+      "errors": {
+        "name": {
+          "required": "Farm name is required"
+        }
+      },
+      "submit": "Create Farm"
+    }
+  },
+  "farmSwitcher": {
+    "label": "Farms"
+  }
+}

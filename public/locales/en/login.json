@@ -1,0 +1,27 @@
+{
+  "title": "Login to AgroSmart",
+  "description": "Enter your credentials to access your account.",
+  "form": {
+    "labels": {
+      "email": "E-Mail",
+      "password": "Password"
+    },
+    "placeholders": {
+      "email": "Enter your email address",
+      "password": "Enter your password"
+    },
+    "submit": "Login",
+    "errors": {
+      "email": {
+        "required": "Email is required"
+      },
+      "password": {
+        "required": "Password is required"
+      }
+    }
+  },
+  "links": {
+    "noAccount": "Don't have an account?",
+    "signUp": "Sign up"
+  }
+}

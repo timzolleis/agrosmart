@@ -7,4 +7,8 @@ export class AuthenticatedUser {
         this.data = user;
     }
 
+    get id(): string {
+        return this.data.id;
+    }
+
 }

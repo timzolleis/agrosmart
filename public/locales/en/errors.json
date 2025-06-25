@@ -1,0 +1,10 @@
+{
+  "prisma": {
+    "unknownError": "Something went wrong when interacting with the database, but we're not sure what. We're looking into it.",
+    "internalError": "An internal error occurred while processing your request. Please try again later.",
+    "uniqueConstraintViolation": "A record with the same unique identifier already exists. Please check your input and try again.",
+    "foreignKeyConstraintViolation": "Your operation could not be completed because a related record does not exist. Please ensure all related records are present and try again.",
+    "nullConstraintViolation": "A required field is missing. Please ensure all required fields are filled out and try again.",
+    "recordNotFound": "The requested record was not found. Please check the identifier and try again."
+  }
+}

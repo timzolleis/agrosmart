@@ -1,0 +1,29 @@
+model Animal {
+  id        String   @id @default(cuid())
+  name      String
+  type      String //COW, SHEEP, GOAT, etc.
+  birthDate DateTime
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  farmId String
+  farm   Farm   @relation(fields: [farmId], references: [id])
+
+  herds Herd[]
+}
+
+model Herd {
+  id String @id @default(cuid())
+
+  name        String
+  description String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  animals        Animal[]
+  farmId         String
+  farm           Farm                  @relation(fields: [farmId], references: [id])
+  journalEntries PastureJournalEntry[]
+}

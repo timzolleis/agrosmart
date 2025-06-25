@@ -12,9 +12,6 @@ export interface BetterAuthUser {
   createdAt: Date;
   updatedAt: Date;
 
-  hasVerificationRequested: boolean;
-  isVerified: boolean;
-  isAdmin: boolean;
 }
 
 export const auth = betterAuth({
@@ -22,26 +19,11 @@ export const auth = betterAuth({
     provider: 'sqlite',
   }),
   emailAndPassword: {
-    enabled: false,
+    enabled: true,
   },
-  socialProviders: {
-    github: {
-      clientId: env.GITHUB_CLIENT_ID,
-      clientSecret: env.GITHUB_CLIENT_SECRET,
-    },
-  },
-
   user: {
     modelName: 'User',
     additionalFields: {
-      hasVerificationRequested: {
-        type: 'boolean',
-        input: false,
-      },
-      isVerified: {
-        type: 'boolean',
-        input: false,
-      },
       isAdmin: {
         type: 'boolean',
         input: false,

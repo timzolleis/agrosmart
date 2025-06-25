@@ -10,3 +10,4 @@
 prisma/data
 .idea
 *.iml
+.claude

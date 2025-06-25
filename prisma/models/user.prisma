@@ -7,14 +7,13 @@ model User {
   createdAt     DateTime @default(now())
   updatedAt     DateTime @updatedAt
 
-  //Some developer-account specific things
-  hasVerificationRequested Boolean @default(false)
-  isVerified               Boolean @default(false)
-  isAdmin                  Boolean @default(false)
+  isAdmin Boolean @default(false)
 
   //Relationships
-  sessions Session[]
-  account  Account?
+  sessions     Session[]
+  account      Account?
+  farms        Farm[]    @relation("FarmMembers")
+  createdFarms Farm[]    @relation("FarmCreatedByUser")
 }
 
 model Account {

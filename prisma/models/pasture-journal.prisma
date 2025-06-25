@@ -1,0 +1,13 @@
+model PastureJournalEntry {
+  id String @id @default(cuid())
+
+  date DateTime
+
+  fieldName String
+
+  farmId String
+  farm   Farm   @relation(fields: [farmId], references: [id])
+
+  herdId String
+  herd   Herd   @relation(fields: [herdId], references: [id])
+}

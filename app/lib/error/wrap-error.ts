@@ -10,3 +10,6 @@ export function wrapError<TError extends BaseError, TParams extends object = {}>
     } as { cause?: unknown } & TParams);
 }
 type ErrorConstructor<TError extends BaseError> = new (args: {cause?: unknown}) => TError;
+
+
+

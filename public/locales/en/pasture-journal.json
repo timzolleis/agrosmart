@@ -1,0 +1,84 @@
+{
+  "createEntry": "Create Entry",
+  "page": {
+    "title": "Pasture Journal",
+    "description": "Track and manage your pasture journal entries to monitor herd movements and field usage."
+  },
+  "dialog": {
+    "title": "Create Journal Entry",
+    "description": "Add a new entry to your pasture journal. Fill in the field name, date, and select the herd."
+  },
+  "editDialog": {
+    "title": "Edit Journal Entry",
+    "description": "Update the details of this pasture journal entry."
+  },
+  "deleteDialog": {
+    "title": "Delete Journal Entry",
+    "description": "Are you sure you want to delete this journal entry? This action cannot be undone.",
+    "cancel": "Cancel",
+    "confirm": "Delete",
+    "deleting": "Deleting..."
+  },
+  "form": {
+    "fields": {
+      "fieldName": {
+        "label": "Field Name",
+        "placeholder": "Enter field name"
+      },
+      "date": {
+        "label": "Date",
+        "placeholder": "Select a date"
+      },
+      "herd": {
+        "label": "Herd",
+        "placeholder": "Select a herd"
+      }
+    },
+    "validation": {
+      "fieldName": {
+        "required": "Field name is required"
+      },
+      "herd": {
+        "required": "Herd is required"
+      }
+    }
+  },
+  "list": {
+    "empty": {
+      "title": "No journal entries yet",
+      "description": "Start tracking your pasture usage by creating your first journal entry."
+    },
+    "table": {
+      "headers": {
+        "fieldName": "Field Name",
+        "herd": "Herd",
+        "date": "Date"
+      },
+      "pagination": {
+        "previous": "Previous",
+        "next": "Next",
+        "showing": "{{start}} to {{end}} of {{total}} entries",
+        "noResults": "No results."
+      },
+      "actions": {
+        "edit": "Edit",
+        "delete": "Delete"
+      }
+    }
+  },
+  "actions": {
+    "createEntry": "Create Entry",
+    "updateEntry": "Update Entry"
+  },
+  "notifications": {
+    "entryCreated": "Journal entry created successfully",
+    "entryUpdated": "Journal entry updated successfully",
+    "entryDeleted": "Journal entry deleted successfully"
+  },
+  "errors": {
+    "createEntry": "Failed to create journal entry",
+    "updateEntry": "Failed to update journal entry",
+    "deleteEntry": "Failed to delete journal entry"
+  },
+  "confirmDelete": "Are you sure you want to delete this journal entry? This action cannot be undone."
+}
